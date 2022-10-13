@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cloud3png"
+        android:label="QuizAPP"
+        android:roundIcon="@drawable/cloud"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WrongActivity" android:screenOrientation="locked"/>
+        <activity android:name=".ShowScoreActivity" android:screenOrientation="locked"/>
+        <activity android:name=".RightActivity" android:screenOrientation="locked"/>
+        <activity android:name=".QuestionActivity" android:screenOrientation="locked"/>
+        <activity android:name=".MainActivity" android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
